@@ -1,4 +1,3 @@
-<?php include("security.php"); ?>
 <?php include("includes/header.php"); ?>
 <?php include("includes/sidebar.php"); ?>
 <?php include("includes/topbar.php"); ?>
@@ -34,7 +33,7 @@
 
             <div class="table-responsive">
                 <?php
-                $query = "SELECT * FROM hotnew";
+                $query = "SELECT * FROM hotnews";
                 $res = mysqli_query($con, $query);
                 ?>
                 <table class="table table-bordered border-primary">

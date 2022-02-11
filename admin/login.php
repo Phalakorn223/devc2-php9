@@ -11,13 +11,18 @@
                         <div class="col-md-12">
 
                             <div class="card-text mx-auto" style="width: 20rem;">
-                                <img src="img/ดาวน์โหลด.jpg" class="card-img-top" alt="img">
+                                <img src="img/1.jpg" class="card-img-top" alt="img">
                                 <div class="card-body">
                                     <h3 class="card-title text-center text-warning fs-2">ผู้ดูแลระบบ</h3>
                                 </div>
                             </div>
 
-                            <?php include("message.php");?>
+                            <?php 
+                                if(isset($_SESSION['status']) && $_SESSION['status'] !=''){
+                                    echo'<h2 class="bg-denger text-white"></h2>'.$_SESSION['status'];
+                                    unset($_SESSION['status']);
+                                }
+                            ?>
 
                             <form action="code.php" method="post">
                                 <div class="form-group">

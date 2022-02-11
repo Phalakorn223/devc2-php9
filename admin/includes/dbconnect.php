@@ -1,10 +1,12 @@
 <?php 
-    $host = "localhost";
-    $user="root";
-    $password="";
-    $dbconnect="cirdb";
+    // $host = "localhost";
+    // $user="root";
+    // $password="";
+    // $dbconnect="cirdb";
 
-    $con=mysqli_connect("$host","$user","$password","$dbconnect");
+    $con=mysqli_connect("$localhost","root","","cirdb");
+
+    //$con=mysqli_connect("$localhost","id18398717_usercirdb","Kz{]7rn^P1q09UAL","id18398717_cirdb65");
     mysqli_set_charset($con,"utf8");
-    //$conn=mysqli_connect("localhost","root","","cirdb");
+
 ?>
