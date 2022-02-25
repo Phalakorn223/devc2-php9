@@ -92,7 +92,7 @@
                                         <input type="hidden" name="delete_image" value="<?php echo $row['namepic'] ?>">
                                         <input type="hidden" name="delete_doc" value="<?php echo $row['namedoc'] ?>">
                                         <input type="hidden" name="delete_id" value="<?php echo $row['id'] ?>">
-                                        <button type="submit" name="news_deletebtn" class="btn btn-danger">ลบ</button>
+                                        <button type="submit" name="news_deletebtn" class="btn btn-danger" onclick="return confirm('ต้องลบหรือไม่?s')">ลบ</button>
                                     </form>
                                 </td>
                             </tr>
